@@ -14,10 +14,13 @@
         <button id="textModeBtn">Text Mode</button>
         <button id="drawModeBtn">Drawing Mode</button>
         <button id="mediaModeBtn">Media Mode</button>
+        <input type="color" id="colorPicker" value="#000000" title="Color">
+        <label for="lineWidthPicker" style="margin-left: 10px;">Width:</label>
+        <input type="range" id="lineWidthPicker" min="1" max="30" value="2" title="Line Width">
+        <button id="clearCanvasBtn" style="margin-left: 10px;">Clear Canvas</button>
     </div>
     <main id="content-area">
-        <!-- Canvas, text editor, and media will go here -->
-        <p>Content area placeholder</p>
+        <canvas id="noteCanvas"></canvas>
     </main>
     <script src="script.js"></script>
 </body>
