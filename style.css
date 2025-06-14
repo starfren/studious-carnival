@@ -1,0 +1,54 @@
+/* Basic Reset */
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+#toolbar {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-bottom: 1px solid #bbb;
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+#toolbar button {
+    padding: 8px 15px;
+    border: 1px solid #999;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#toolbar button:hover {
+    background-color: #f5f5f5;
+}
+
+#toolbar button.active { /* Style for active button, if implemented later */
+    background-color: #d0d0d0;
+    font-weight: bold;
+}
+
+#content-area {
+    flex-grow: 1; /* Allows this area to take up remaining vertical space */
+    padding: 20px;
+    background-color: #fafafa;
+    border: 2px dashed #ddd; /* Placeholder border */
+}
