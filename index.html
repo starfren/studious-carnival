@@ -18,8 +18,34 @@
         <label for="lineWidthPicker" style="margin-left: 10px;">Width:</label>
         <input type="range" id="lineWidthPicker" min="1" max="30" value="2" title="Line Width">
         <button id="clearCanvasBtn" style="margin-left: 10px;">Clear Canvas</button>
+
+        <div id="textToolbarControls" style="display: none; margin-left: 15px; border-left: 1px solid #bbb; padding-left: 15px;">
+            <button id="boldBtn" title="Bold"><b>B</b></button>
+            <button id="italicBtn" title="Italic"><i>I</i></button>
+            <button id="underlineBtn" title="Underline"><u>U</u></button>
+            <select id="fontSizeSelect" title="Font Size" style="margin-left: 5px;">
+                <option value="1">Smallest</option>
+                <option value="2">Small</option>
+                <option value="3" selected>Normal</option>
+                <option value="4">Large</option>
+                <option value="5">X-Large</option>
+                <option value="6">XX-Large</option>
+                <option value="7">Huge</option>
+            </select>
+            <select id="fontNameSelect" title="Font Name" style="margin-left: 5px;">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Impact">Impact</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+            </select>
+            <input type="color" id="fontColorPicker" value="#000000" title="Font Color" style="margin-left: 5px; width: 30px; height: 24px; padding:0; border-radius:3px; vertical-align: middle;">
+        </div>
     </div>
     <main id="content-area">
+        <div id="textEditor" class="text-editor-area" style="display: none;"></div>
         <canvas id="noteCanvas"></canvas>
     </main>
     <script src="script.js"></script>
